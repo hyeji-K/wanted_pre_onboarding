@@ -15,6 +15,7 @@
 		10316354285870E400F88955 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10316353285870E400F88955 /* WeatherViewController.swift */; };
 		1031635828587BCB00F88955 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1031635728587BCB00F88955 /* WeatherCell.swift */; };
 		10FD2FEA2858B42800B54066 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD2FE92858B42800B54066 /* DetailViewController.swift */; };
+		10FD2FF02858DDB700B54066 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD2FEF2858DDB700B54066 /* WeatherInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		10316353285870E400F88955 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		1031635728587BCB00F88955 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		10FD2FE92858B42800B54066 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		10FD2FEF2858DDB700B54066 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		103163502858705400F88955 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				10FD2FEF2858DDB700B54066 /* WeatherInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				1031635828587BCB00F88955 /* WeatherCell.swift in Sources */,
 				1031633B285866CA00F88955 /* AppDelegate.swift in Sources */,
+				10FD2FF02858DDB700B54066 /* WeatherInfo.swift in Sources */,
 				10FD2FEA2858B42800B54066 /* DetailViewController.swift in Sources */,
 				10316354285870E400F88955 /* WeatherViewController.swift in Sources */,
 				1031633D285866CA00F88955 /* SceneDelegate.swift in Sources */,
