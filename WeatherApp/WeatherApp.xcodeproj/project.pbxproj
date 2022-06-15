@@ -17,6 +17,7 @@
 		10FD2FEA2858B42800B54066 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD2FE92858B42800B54066 /* DetailViewController.swift */; };
 		10FD2FF02858DDB700B54066 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD2FEF2858DDB700B54066 /* WeatherInfo.swift */; };
 		10FD2FF2285961A500B54066 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD2FF1285961A500B54066 /* APIManager.swift */; };
+		10FD2FF528597AC500B54066 /* DetailWeather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FD2FF328597AC500B54066 /* DetailWeather.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		10FD2FE92858B42800B54066 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		10FD2FEF2858DDB700B54066 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
 		10FD2FF1285961A500B54066 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		10FD2FF428597AC500B54066 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = WeatherApp/Base.lproj/DetailWeather.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				103163502858705400F88955 /* Model */,
 				10FD2FF1285961A500B54066 /* APIManager.swift */,
 				10316340285866CA00F88955 /* Main.storyboard */,
+				10FD2FF328597AC500B54066 /* DetailWeather.storyboard */,
 				10316345285866CB00F88955 /* LaunchScreen.storyboard */,
 				10316343285866CB00F88955 /* Assets.xcassets */,
 				10316348285866CB00F88955 /* Info.plist */,
@@ -171,6 +174,7 @@
 			files = (
 				10316347285866CB00F88955 /* LaunchScreen.storyboard in Resources */,
 				10316344285866CB00F88955 /* Assets.xcassets in Resources */,
+				10FD2FF528597AC500B54066 /* DetailWeather.storyboard in Resources */,
 				10316342285866CA00F88955 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +213,14 @@
 				10316346285866CB00F88955 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		10FD2FF328597AC500B54066 /* DetailWeather.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10FD2FF428597AC500B54066 /* Base */,
+			);
+			name = DetailWeather.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

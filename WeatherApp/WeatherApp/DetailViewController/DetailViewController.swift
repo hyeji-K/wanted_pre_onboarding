@@ -17,6 +17,9 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    var weatherInfo: WeatherInfo?
+    var cityName: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,6 +30,18 @@ class DetailViewController: UIViewController {
         tableView.backgroundColor = .systemGray6
         view.backgroundColor = .systemGray6
         weatherImageView.backgroundColor = .systemGray6
+        
+        APIManager.shared.getWeatherData(cityName) { weatherInfo in
+            self.weatherInfo = weatherInfo
+            guard let data = self.weatherInfo else { return }
+
+            DispatchQueue.main.async {
+                self.cityNameLabel.text = data.name
+                self.descriptionLabel.text = data.weather[0].main
+                self.currentTempLabel.text = "\(Int(data.main.temp))°"
+                self.feelTempLabel.text = "체감 온도: \(Int(data.main.feelsLike))°"
+            }
+        }
     }
 }
 
