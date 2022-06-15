@@ -11,6 +11,10 @@ class WeatherViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    let city: [String] = ["gongju", "gwangju", "gumi", "gunsan", "daegu", "daejeon", "mokpo", "busan", "seosan", "seoul", "sokcho", "suwon", "suncheon", "ulsan", "iksan", "jeonju", "jeju", "cheonan", "cheongju", "chuncheon"]
+    
+    var weatherInfo: WeatherInfo?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,12 +25,23 @@ class WeatherViewController: UIViewController {
 
 extension WeatherViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return city.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WeatherCell", for: indexPath) as? WeatherCell else {
             return UICollectionViewCell()
+        }
+        
+        let cityName = city[indexPath.item]
+        
+        APIManager.shared.getWeatherData(cityName) { weatherInfo in
+            self.weatherInfo = weatherInfo
+            guard let data = self.weatherInfo else { return }
+
+            DispatchQueue.main.async {
+                cell.configure(data)
+            }
         }
         
         return cell

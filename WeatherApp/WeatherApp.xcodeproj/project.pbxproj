@@ -16,6 +16,7 @@
 		1031635828587BCB00F88955 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1031635728587BCB00F88955 /* WeatherCell.swift */; };
 		10FD2FEA2858B42800B54066 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD2FE92858B42800B54066 /* DetailViewController.swift */; };
 		10FD2FF02858DDB700B54066 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD2FEF2858DDB700B54066 /* WeatherInfo.swift */; };
+		10FD2FF2285961A500B54066 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD2FF1285961A500B54066 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1031635728587BCB00F88955 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		10FD2FE92858B42800B54066 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		10FD2FEF2858DDB700B54066 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		10FD2FF1285961A500B54066 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				1031634F28586F6200F88955 /* WeatherViewController */,
 				10316352285870B500F88955 /* DetailViewController */,
 				103163502858705400F88955 /* Model */,
+				10FD2FF1285961A500B54066 /* APIManager.swift */,
 				10316340285866CA00F88955 /* Main.storyboard */,
 				10316345285866CB00F88955 /* LaunchScreen.storyboard */,
 				10316343285866CB00F88955 /* Assets.xcassets */,
@@ -185,6 +188,7 @@
 				10FD2FEA2858B42800B54066 /* DetailViewController.swift in Sources */,
 				10316354285870E400F88955 /* WeatherViewController.swift in Sources */,
 				1031633D285866CA00F88955 /* SceneDelegate.swift in Sources */,
+				10FD2FF2285961A500B54066 /* APIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
