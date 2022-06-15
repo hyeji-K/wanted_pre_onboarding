@@ -66,3 +66,15 @@ extension WeatherViewController: UICollectionViewDelegateFlowLayout {
         return 10
     }
 }
+
+extension WeatherViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cityName = city[indexPath.item]
+        
+        let storyboard = UIStoryboard(name: "DetailWeather", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        
+        vc.cityName = cityName
+        navigationController?.pushViewController(vc, animated: true)
+    }
+}
