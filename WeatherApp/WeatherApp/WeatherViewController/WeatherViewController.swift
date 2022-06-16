@@ -15,6 +15,10 @@ class WeatherViewController: UIViewController {
     
     var weatherInfo: WeatherInfo?
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.collectionView.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
