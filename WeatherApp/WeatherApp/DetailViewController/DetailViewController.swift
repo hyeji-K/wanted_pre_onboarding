@@ -36,17 +36,8 @@ class DetailViewController: UIViewController {
             self.weatherInfo = weatherInfo
             guard let data = self.weatherInfo else { return }
             
-            let serialQueue = DispatchQueue(label: "Decode queue")
-            serialQueue.async {
-                let weatherURL = "http://openweathermap.org/img/w/\(weatherInfo.weather[0].icon).png"
-                guard let imageURL = URL(string: weatherURL),
-                      let imageData = try? Data(contentsOf: imageURL)
-                else { return }
-                
-                DispatchQueue.main.async {
-                    self.weatherImageView.image = UIImage(data: imageData)
-                }
-            }
+            let weatherURL = "http://openweathermap.org/img/w/\(weatherInfo.weather[0].icon).png"
+            self.weatherImageView.setImageURL(weatherURL)
 
             DispatchQueue.main.async {
                 self.cityNameLabel.text = data.name
