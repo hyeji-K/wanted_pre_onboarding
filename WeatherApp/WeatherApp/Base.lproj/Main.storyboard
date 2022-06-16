@@ -36,13 +36,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="도시 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsS-8s-qY9">
-                                                    <rect key="frame" x="10" y="35" width="92.5" height="30"/>
+                                                    <rect key="frame" x="16" y="35" width="92.5" height="30"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SOc-VH-68c">
-                                                    <rect key="frame" x="289.5" y="9" width="110.5" height="82"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SOc-VH-68c">
+                                                    <rect key="frame" x="283.5" y="11.5" width="110.5" height="77"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WPU-De-p8y">
                                                             <rect key="frame" x="0.0" y="0.0" width="110.5" height="60"/>
@@ -64,7 +64,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="습도: 30%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oV-gx-r2C">
-                                                            <rect key="frame" x="24" y="65" width="62.5" height="17"/>
+                                                            <rect key="frame" x="24" y="60" width="62.5" height="17"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -74,8 +74,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="SOc-VH-68c" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SsS-8s-qY9" secondAttribute="trailing" constant="10" id="0Jm-qi-Mfa"/>
-                                                <constraint firstItem="SsS-8s-qY9" firstAttribute="leading" secondItem="ra3-aW-kbr" secondAttribute="leading" constant="10" id="KDx-kJ-MxA"/>
-                                                <constraint firstAttribute="trailing" secondItem="SOc-VH-68c" secondAttribute="trailing" constant="10" id="RAi-rX-fS8"/>
+                                                <constraint firstItem="SsS-8s-qY9" firstAttribute="leading" secondItem="ra3-aW-kbr" secondAttribute="leading" constant="16" id="KDx-kJ-MxA"/>
+                                                <constraint firstAttribute="trailing" secondItem="SOc-VH-68c" secondAttribute="trailing" constant="16" id="RAi-rX-fS8"/>
                                                 <constraint firstItem="SOc-VH-68c" firstAttribute="centerY" secondItem="ra3-aW-kbr" secondAttribute="centerY" id="YjM-l5-r4M"/>
                                                 <constraint firstItem="SsS-8s-qY9" firstAttribute="centerY" secondItem="ra3-aW-kbr" secondAttribute="centerY" id="vdY-0I-CBM"/>
                                             </constraints>
@@ -126,14 +126,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kc8-cJ-iKb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
-        </scene>
-        <!--DetailViewController-->
-        <scene sceneID="Htd-Ca-I3K">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="DetailViewController" storyboardName="DetailWeather" referencedIdentifier="DetailViewController" id="MfN-3t-Ymn" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Znz-Up-qYV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1960.8695652173915" y="93.75"/>
         </scene>
     </scenes>
     <resources>

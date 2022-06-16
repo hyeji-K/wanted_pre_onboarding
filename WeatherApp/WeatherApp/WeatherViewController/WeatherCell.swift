@@ -31,6 +31,6 @@ class WeatherCell: UICollectionViewCell {
         cityNameLabel.text = cityKo[cityName]
         
         currentTempLabel.text = "\(Int(weatherInfo.main.temp))°"
-        currentHumidLabel.text = "습도: \(weatherInfo.main.humidity)%"
+        currentHumidLabel.text = "습도 \(weatherInfo.main.humidity)%"
     }
 }
