@@ -24,6 +24,8 @@ class DetailViewController: UIViewController {
     var weatherInfo: WeatherInfo?
     var cityName: String = ""
     
+    let cityKo: [String: String] = ["Gongju": "공주", "Gwangju": "광주", "Gumi": "구미", "Gunsan": "군산", "Daegu": "대구", "Daejeon": "대전", "Mokpo": "목포", "Busan": "부산", "Seosan City": "서산", "Seoul": "서울", "Sokcho": "속초", "Suwon-si": "수원", "Suncheon": "순천", "Ulsan": "울산", "Iksan": "익산", "Jeonju": "전주", "Jeju City": "제주시", "Cheonan": "천안", "Cheongju-si": "청주", "Chuncheon": "춘천"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,7 +33,12 @@ class DetailViewController: UIViewController {
         
         weatherDetailView.backgroundColor = .systemGray6
         weatherDetailView.layer.cornerRadius = 10
+        self.navigationController?.navigationBar.tintColor = .black
         
+        updateUI()
+    }
+    
+    func updateUI() {
         APIManager.shared.getWeatherData(cityName) { weatherInfo in
             self.weatherInfo = weatherInfo
             guard let data = self.weatherInfo else { return }
@@ -40,7 +47,7 @@ class DetailViewController: UIViewController {
             self.weatherImageView.setImageURL(weatherURL)
 
             DispatchQueue.main.async {
-                self.cityNameLabel.text = data.name
+                self.cityNameLabel.text = self.cityKo[weatherInfo.name]
                 self.descriptionLabel.text = data.weather[0].main
                 self.currentTempLabel.text = "\(Int(data.main.temp))°"
                 self.feelTempLabel.text = "\(Int(data.main.feelsLike))°"
