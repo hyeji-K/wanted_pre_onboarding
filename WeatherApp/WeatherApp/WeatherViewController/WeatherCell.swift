@@ -24,17 +24,8 @@ class WeatherCell: UICollectionViewCell {
     
     func configure(_ weatherInfo: WeatherInfo) {
         
-        let serialQueue = DispatchQueue(label: "Decode queue")
-        serialQueue.async {
-            let weatherURL = "http://openweathermap.org/img/w/\(weatherInfo.weather[0].icon).png"
-            guard let imageURL = URL(string: weatherURL),
-                  let imageData = try? Data(contentsOf: imageURL)
-            else { return }
-            
-            DispatchQueue.main.async {
-                self.weatherImageView.image = UIImage(data: imageData)
-            }
-        }
+        let weatherURL = "http://openweathermap.org/img/w/\(weatherInfo.weather[0].icon).png"
+        weatherImageView.setImageURL(weatherURL)
         
         let cityName = weatherInfo.name
         cityNameLabel.text = cityKo[cityName]
